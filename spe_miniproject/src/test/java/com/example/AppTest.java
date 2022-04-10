@@ -1,6 +1,7 @@
 package com.example;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -19,6 +20,11 @@ public class AppTest
     public void testFactorialtruePositive()
     {
         assertEquals(24, calculator.factorial(4), delta);
+    }
+
+    @Test
+    public void testFactorialFalsePositive(){
+        assertNotEquals(30, calculator.factorial(4),delta);
     }
 
     @Test
