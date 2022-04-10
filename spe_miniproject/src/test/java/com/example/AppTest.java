@@ -20,6 +20,7 @@ public class AppTest
     {
         assertEquals(24, calculator.factorial(4), delta);
     }
+
     @Test
     public void shouldAnswerWithTrue()
     {
