@@ -38,13 +38,13 @@ public class ScientificCalculator {
         int choice = 0;
 
         while(choice != 5){
-            choice = scanner.nextInt();
-            System.out.println("Welcome to ScientificCalculator 1.0! Follow the given instructions for a fruitful experience!");
+            System.out.println("\nWelcome to ScientificCalculator 1.0! Follow the given instructions for a fruitful experience!");
             System.out.println("Enter 1 if you want to compute a factorial.");
             System.out.println("Enter 2 if you want to compute a square root");
-            System.out.println("Enter 3 if you want to compute a power.");
-            System.out.println("Enter 4 if you want to compute a natural logarithm.");
+            System.out.println("Enter 3 if you want to compute a natural logarithm.");
+            System.out.println("Enter 4 if you want to compute a power.");
             System.out.println("Enter 5 if you have finished all your computations and want to exit.");
+            choice = scanner.nextInt();
 
             switch(choice){
                 case 1:
@@ -74,6 +74,7 @@ public class ScientificCalculator {
                     break;
                 
                 case 5:
+                    System.out.println("Hope you enjoyed our service! Bye for now!");
                     break;
             }
         }
