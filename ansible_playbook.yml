@@ -1,0 +1,8 @@
+---
+- name: Deploy a jar file
+  hosts: localhost
+  tasks:
+    - name: Copy jar file to main directory
+      copy:
+        src: ./target/ScientificCalculator-1.0-SNAPSHOT.jar
+        dest: .
