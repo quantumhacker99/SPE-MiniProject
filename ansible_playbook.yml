@@ -1,8 +1,7 @@
 ---
-- name: Deploy a jar file
+- name: Deploy Docker Container
   hosts: localhost
   tasks:
-    - name: Copy jar file to main directory
-      copy:
-        src: ./target/ScientificCalculator-1.0-SNAPSHOT.jar
-        dest: .
+    - name: Pull Docker Image from Docker Hub 
+      docker_image:
+              name: h3md0cker/scicalc:latest
