@@ -1,6 +1,7 @@
 ---
 - name: Deploy Docker Container
-  hosts: localhost
+  hosts: ubuntu18
+  remote_user: hemc
   tasks:
     - name: Pull Docker Image from Docker Hub 
       docker_image:
