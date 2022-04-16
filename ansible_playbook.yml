@@ -4,4 +4,4 @@
   tasks:
     - name: Pull Docker Image from Docker Hub 
       docker_image:
-              name: h3md0cker/scificalc:latest
+              name: h3md0cker/scificalc:test
