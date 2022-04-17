@@ -1,2 +1,2 @@
 [ubuntu18]
-172.16.134.191 ansible_user=hemc
+192.168.29.252 ansible_user=hemc
