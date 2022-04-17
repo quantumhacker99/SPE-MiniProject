@@ -51,7 +51,7 @@ pipeline{
             steps{
                 script{
                     echo "Deploying image to Ansible"
-                    ansiblePlaybook colorized: true, disableHostKeyChecking: true, installation: 'Ansible',  playbook: 'ansible_playbook.yml'
+                    ansiblePlaybook colorized: true, disableHostKeyChecking: true, installation: 'Ansible',  inventory: 'inventory', playbook: 'ansible_playbook.yml'
                 }
             }
         }
