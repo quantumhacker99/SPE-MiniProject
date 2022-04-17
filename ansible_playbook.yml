@@ -5,5 +5,5 @@
   tasks:
     - name: Pull Docker Image from Docker Hub 
       docker_image:
-              name: h3md0cker/scicalc
+              name: h3md0ck3r/scicalc
               source: pull
